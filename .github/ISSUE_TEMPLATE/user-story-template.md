@@ -1,5 +1,5 @@
 ---
-name: User Story
+name: User Story Template
 about: Creates a Business User Story
 title: "[USER STORY]"
 labels: enhancement
