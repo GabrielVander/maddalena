@@ -24,6 +24,7 @@ linter:
 
     public_member_api_docs: false
     lines_longer_than_80_chars: false
+    sort_pub_dependencies: false
     unawaited_futures: true # Future results in async function bodies must be awaited or marked unawaited using dart:async
     await_only_futures: true # "await" should only be used on Futures
     avoid_void_async: true # Avoid async functions that return void. (they should return Future<void>)
