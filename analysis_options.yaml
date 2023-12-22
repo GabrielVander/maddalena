@@ -21,7 +21,20 @@ linter:
   rules:
     # avoid_print: false  # Uncomment to disable the `avoid_print` rule
     # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+
     public_member_api_docs: false
+    lines_longer_than_80_chars: false
+    unawaited_futures: true # Future results in async function bodies must be awaited or marked unawaited using dart:async
+    await_only_futures: true # "await" should only be used on Futures
+    avoid_void_async: true # Avoid async functions that return void. (they should return Future<void>)
+    discarded_futures: true # Don’t invoke asynchronous functions in non-async blocks.
+
+analyzer:
+  errors:
+    unawaited_futures: error
+    await_only_futures: error
+    avoid_void_async: error
+    discarded_futures: error
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
